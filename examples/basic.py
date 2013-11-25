@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
+from crypto_trade import CryptoTrade 
 #Example configuration
 key='MYKEY'
 secret='MYSECRET'
-cryp = crypto(key,secret)
+cryp = CryptoTrade(key,secret)
 
 #Example placing an order
 cryp.req('trade',{"pair":"ltc_btc","type":"Buy","amount":ltc_bid_amount,"rate":price_to_bid})
